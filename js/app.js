@@ -25,7 +25,7 @@ EveryJS.libraries = [
     ],
     dependencies: ["jQuery (included in package)"],
     license: "MIT or GPL Version 2",
-    tags: ["ui", "jQuery plugins"]
+    tags: ["ui", "jQuery plugins"],
     size: "By default, 295K of JavaScript, plus whatever theme is used. Can be customized on the download page."
   }
 
