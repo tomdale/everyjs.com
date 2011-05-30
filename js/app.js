@@ -170,6 +170,12 @@ EveryJS.libraries = [
       "You want to define your data as a JavaScript model object, and then bind DOM elements and/or templates to it."
     ],
     size: 25
+  },
+  {
+    name: "Modernizr",
+    website: "http://www.modernizr.com",
+    description: "Modernizr is a JavaScript library that allows you to use CSS3 and HTML5 features while maintaining a fine level of control over browsers that don't support them yet.",
+    size: 3.7
   }
 
 ];
