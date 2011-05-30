@@ -170,8 +170,18 @@ EveryJS.libraries = [
       "You want to define your data as a JavaScript model object, and then bind DOM elements and/or templates to it."
     ],
     size: 25
+  },
+  {
+    name: "environ",
+    website: "http://github.com/azer/environ",
+    description: "Cross platform environment detection library.", 
+    useIf: [
+      "You want to detect what platform the user is running.",
+      "You want to detect what JavaScript engine the user's platform utilises.",
+      "You want to detect what rendering engine the user's browser utilises."
+    ],
+    size: 1
   }
-
 ];
 
 EveryJS.libraries.sort(function(a,b) {
