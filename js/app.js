@@ -139,6 +139,18 @@ EveryJS.libraries = [
     size: "15K to start; modules are loaded dynamically"
   },
   {
+    name: "Cappuccino",
+    website: "http://www.cappuccino.org",
+    description: "Cappuccino makes it easy to build desktop-caliber applications that run in a web browser.",
+    useIf: [
+      "You want to build desktop-calibar applications quickly."
+    ],
+    dependencies: null,
+    license: "LGPL",
+    tags: ['objective-j'],
+    size: "1mb, includes code and images"
+  },
+  {
     name: "functools",
     website: "http://github.com/azer/functools",
     description: "A minimal JavaScript library for functional operations.", 
