@@ -287,6 +287,14 @@ EveryJS.libraries = [
     website: "http://benchmarkjs.com/",
     description: "A benchmarking library that works on nearly all JavaScript platforms, supports high-resolution timers, and returns statistically significant results.",
     size: 4.9
+  }, 
+  {
+    name: "Spine",
+    website: "http://maccman.github.com/spine",
+    description: "Spine is a lightweight framework for building JavaScript web applications. Spine gives you a MVC structure and then gets out of your way, allowing you to concentrate on the fun stuff, building awesome web applications.",
+    dependencies: ["jQuery or Zepto (optional but recommended)"],
+    tags: ['mvc'],
+    size: 2
   }
   },
   {
