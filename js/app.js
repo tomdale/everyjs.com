@@ -143,6 +143,12 @@ EveryJS.libraries = [
     website: "http://github.com/azer/functools",
     description: "A minimal JavaScript library for functional operations.", 
     size: 2
+  },
+  {
+    name: "Raphael",
+    website: "http://raphaeljs.com/",
+    description: "A small JavaScript library that should simplify your work with vector graphics on the web.", 
+    size: 2
   }
 ];
 
