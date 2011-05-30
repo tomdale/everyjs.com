@@ -126,7 +126,7 @@ EveryJS.libraries = [
   {
     name: "functools",
     website: "http://github.com/azer/functools",
-    description: "A minimal library for functional operations", 
+    description: "A minimal JavaScript library for functional operations.", 
     size: 2
   }
 ];
