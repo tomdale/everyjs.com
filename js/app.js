@@ -21,7 +21,11 @@
   numberPattern = /^(?:[\d.]+)?$/;
 
   function getLibraryElements() {
-    return Array.prototype.slice.call(librariesEl.getElementsByTagName("tr"));
+    var elements = librariesEl.getElementsByTagName("tr"), result = [];
+    for (var i = 0; i < elements.length; i++) {
+      result.push(elements[i]);
+    }
+    return result;
   }
 
   function sort(elements, attribute) {
