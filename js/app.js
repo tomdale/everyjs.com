@@ -57,7 +57,10 @@
       return true;
     } else {
       var tags = element.getAttribute("data-tags").split(" ");
-      return ~tags.indexOf(tag);
+      for (var i = 0; i < tags.length; i++) {
+        if (tag == tags[i]) return true;
+      }
+      return false;
     }
   }
 
