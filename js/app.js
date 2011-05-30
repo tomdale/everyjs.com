@@ -125,8 +125,8 @@ EveryJS.libraries = [
   },
   {
     name: "functools",
-    website: "http://functools.kodfabrik.com",
-    description: "Functools is a library for functional programming written in JavaScript. It's based on a CommonJS module that consists of several function manipulation and list iteration tools.",
+    website: "http://github.com/azer/functools",
+    description: "A minimal library for functional operations", 
     size: 2
   }
 ];
