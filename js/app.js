@@ -116,7 +116,7 @@ EveryJS.libraries = [
 ];
 
 EveryJS.libraries.sort(function(a,b) {
-  return SC.compare(a.name, b.name);
+  return SC.compare(a.name.toLowerCase(), b.name.toLowerCase());
 });
 
 EveryJS.listController = SC.ArrayProxy.create({
