@@ -44,6 +44,13 @@
           <a {{bindAttr href="website"}}>{{name}}</a>
           <p class="description">{{description}}</p>
 
+          {{#if useIf}}
+            <div class="use-if">
+              Use {{name}} if:
+              {{list useIf}}
+            </div>
+          {{/if}}
+
           {{#if dependencies}}
             <div class="dependencies">
               Depends on:
