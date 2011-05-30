@@ -176,6 +176,12 @@ EveryJS.libraries = [
     website: "http://code.google.com/closure/",
     description: "Closure Tools is a set of open-source JavaScript tools behind some of Google's big web apps like Gmail, Google Maps, and Google Docs.",
     size: "modules can be loaded dynamically"
+  },
+  {
+    name: "Modernizr",
+    website: "http://www.modernizr.com",
+    description: "Modernizr is a JavaScript library that allows you to use CSS3 and HTML5 features while maintaining a fine level of control over browsers that don't support them yet.",
+    size: 3.7
   }
 
 ];
