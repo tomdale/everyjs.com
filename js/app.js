@@ -201,7 +201,16 @@ EveryJS.libraries = [
       "You want to detect what rendering engine the user's browser utilises."
     ],
     size: 1
-  }
+  },
+  {
+    name: "LABjs",
+    website: "http://labjs.com/",
+    description: "LABjs is a dynamic script loader intended to replace the use of the ugly, non-performant <script> tag with a flexible and performance-optimized alternative API.", 
+    useIf: [
+      "You want to improve performance by loading scripts in parallel and without blocking other resources."
+    ],
+    size: 2.1
+  }  
 ];
 
 EveryJS.libraries.sort(function(a,b) {
