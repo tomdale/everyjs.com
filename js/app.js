@@ -288,6 +288,16 @@ EveryJS.libraries = [
     description: "A benchmarking library that works on nearly all JavaScript platforms, supports high-resolution timers, and returns statistically significant results.",
     size: 4.9
   }
+  },
+  {
+    name: "LABjs",
+    website: "http://labjs.com/",
+    description: "LABjs is a dynamic script loader intended to replace the use of the ugly, non-performant <script> tag with a flexible and performance-optimized alternative API.", 
+    useIf: [
+      "You want to improve performance by loading scripts in parallel and without blocking other resources."
+    ],
+    size: 2.1
+  }  
 ];
 
 EveryJS.libraries.sort(function(a,b) {
