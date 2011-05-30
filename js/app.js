@@ -161,13 +161,13 @@ EveryJS.libraries = [
   {
     name: "functools",
     website: "http://github.com/azer/functools",
-    description: "A minimal JavaScript library for functional operations.", 
+    description: "A minimal JavaScript library for functional operations.",
     size: 2
   },
   {
     name: "Raphael",
     website: "http://raphaeljs.com/",
-    description: "A small JavaScript library that should simplify your work with vector graphics on the web.", 
+    description: "A small JavaScript library that should simplify your work with vector graphics on the web.",
     size: 2
   },
   {
@@ -194,7 +194,7 @@ EveryJS.libraries = [
   {
     name: "environ",
     website: "http://github.com/azer/environ",
-    description: "Cross platform environment detection library.", 
+    description: "Cross platform environment detection library.",
     useIf: [
       "You want to detect what platform the user is running.",
       "You want to detect what JavaScript engine the user's platform utilises.",
@@ -224,6 +224,19 @@ EveryJS.libraries = [
     license: "MIT",
     tags: ['canvas'],
     size: 15
+  },
+  {
+    name: "Grafico",
+    website: "http://grafico.kilianvalkhof.com/",
+    description: "Grafico is a javascript charting library based on Raphaël and Prototype.js. Grafico's basic principles are to provide good, clean looking graphs inspired by work of Stephen Few and Edward Tufte, while still being flexible to implement and providing numerous api options to tweak the look of the graphs.",
+    license: "MIT",
+    tags: [ 'javascript','svg', 'chart', 'graph'],
+    useIf: [
+      "You need good looking charts",
+      "You need easily readable charts"
+    ],
+    dependencies: ["Prototype", "Raphaël"],
+    size: "36kb or less"
   }
 ];
 
@@ -332,3 +345,4 @@ Handlebars.registerHelper('list', function(key) {
   });
   return new Handlebars.SafeString(buf + '</ul>');
 });
+
