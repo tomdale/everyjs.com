@@ -237,6 +237,19 @@ EveryJS.libraries = [
     ],
     dependencies: ["Prototype", "Raphaël"],
     size: "36kb or less"
+  },
+	{
+    name: "JavaScriptMVC",
+    website: "http://javascriptvc.com",
+    description: "JavaScriptMVC is an open-source framework containing the best ideas in jQuery development. It guides you to successfully completed projects by promoting best practices, maintainability, and convention over configuration..", 
+    useIf: [
+      "You want to build big applications on top of jQuery.",
+      "You want great performance.",
+      "You don't want to care about memory issues in long lived apps"
+    ],
+		tags: ["mvc"],
+    dependencies: ["jQuery"],
+    size: "6.7K - 86K; applications load modules dynamically"
   }
 ];
 
