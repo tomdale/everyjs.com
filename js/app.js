@@ -83,6 +83,16 @@ EveryJS.libraries = [
     website: "http://handlebars.strobeapp.com/",
     description: "Mustache-compatible semantic templating engine.",
     size: 8
+  },
+
+  {
+    name: "Underscore",
+    website: "http://documentcloud.github.com/underscore/",
+    description: "Underscore is a utility-belt library for JavaScript that provides a lot of the functional programming support that you would expect in Prototype.js (or Ruby), but without extending any of the built-in JavaScript objects.",
+    useIf: [
+      "You need features of ECMAScript 5 in non-ES5 browsers."
+    ],
+    size: 3
   }
 ];
 
