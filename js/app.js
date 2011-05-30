@@ -111,7 +111,7 @@ EveryJS.libraries = [
     name: "YUI 3",
     website: "http://developer.yahoo.com/yui/3/",
     description: "Yahoo!'s next-generation JavaScript and CSS library. It powers the new Yahoo! homepage, Yahoo! Mail, and many other Yahoo! sites.",
-    size: "15K++; modules are loaded dynamically"
+    size: "15K to start; modules are loaded dynamically"
   }
 ];
 
