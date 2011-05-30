@@ -1,6 +1,4 @@
 <!doctype html>
-<!--[if lt IE 7 ]> <html lang="en" class="no-js ie6"> <![endif]--> <!--[if IE 7 ]>    <html lang="en" class="no-js ie7"> <![endif]--> <!--[if IE 8 ]>    <html lang="en" class="no-js ie8"> <![endif]--> <!--[if IE 9 ]>    <html lang="en" class="no-js ie9"> <![endif]-->
-<!--[if (gt IE 9)|!(IE)]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -26,10 +24,6 @@
       var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
     })();
   </script>
-
-  <!--[if lt IE 9]>
-  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-  <![endif]-->
 </head>
 <body>
   <div id="wrapper">
@@ -37,61 +31,473 @@
     <h2>The right tool for the job.</h2>
 
     <h3>Libraries</h3>
-    <noscript>
-      <p>The list of JavaScript libraries is generated dynamically. Please enable JavaScript in your browser.</p>
-    </noscript>
-    <script type="text/html">
-      {{#view EveryJS.SortByView}}
-        Sort by
-        <select>
-          <option value="name">Name</option>
-          <option value="size">Size</option>
-        </select>
-      {{/view}}
-      {{#view EveryJS.FilterByView}}
+
+    <div>
+      Sort by
+      <select id="sort_by">
+        <option value="name">Name</option>
+        <option value="size">Size</option>
+      </select>
+    </div>
+
+    <div>
       Filter by Type
-      <select>
-          <option value="all">All</option>
-          <option value="dom">DOM manipulation</option>
-          <option value="animation">Animation</option>
-          <option value="mvc">MVC</option>
-          <option value="mobile-only">Mobile-only</option>
-        </select>
-      {{/view}}
+      <select id="filter_by">
+        <option value="all">All</option>
+        <option value="dom">DOM manipulation</option>
+        <option value="animation">Animation</option>
+        <option value="mvc">MVC</option>
+        <option value="mobile-only">Mobile-only</option>
+      </select>
+    </div>
 
-      {{#collection EveryJS.ListView tagName="table"}}
+    <table id="libraries"><tbody><tr data-name="Backbone.js" data-tags="mvc" data-size="3.9">
       <td>
-        {{#with content}}
-          <a {{bindAttr href="website"}}>{{name}}</a>
-          <p class="description">{{description}}</p>
+        <span>
+          <a href="http://documentcloud.github.com/backbone/" data-handlebars-id="1"><span>Backbone.js</span></a>
+          <p class="description"><span>Backbone supplies structure to JavaScript-heavy applications by providing models with key-value binding and custom events, collections with a rich API of enumerable functions, views with declarative event handling, and connects it all to your existing application over a RESTful JSON interface.</span></p>
 
-          {{#if useIf}}
-            <div class="use-if">
-              Use {{name}} if:
-              {{list useIf}}
-            </div>
-          {{/if}}
+          <span></span>
 
-          {{#if dependencies}}
+          <span>
             <div class="dependencies">
               Depends on:
-              {{list dependencies}}
+              <ul><li>Underscore</li><li>jQuery or Zepto (optional but recommended)</li></ul>
             </div>
-          {{/if}}
+          </span>
 
-          {{#if browserSupport}}
-            <div class="browser-support">
-              {{browserSupport}}
-            </div>
-          {{/if}}
+          <span></span>
 
-          {{#view EveryJS.SizeView}}
-          <em>Just {{sizeString}}.</em>
-          {{/view}}
-        {{/with}}
+          <div>
+          <em>Just <span>3.9K</span>.</em>
+          </div>
+        </span>
       </td>
-      {{/collection}}
-    </script>
+      </tr><tr data-name="Cappuccino" data-tags="objective-j" data-size="1024">
+      <td>
+        <span>
+          <a href="http://www.cappuccino.org" data-handlebars-id="2"><span>Cappuccino</span></a>
+          <p class="description"><span>Cappuccino makes it easy to build desktop-caliber applications that run in a web browser.</span></p>
+
+          <span>
+            <div class="use-if">
+              Use <span>Cappuccino</span> if:
+              <ul><li>You want to build desktop-calibar applications quickly.</li></ul>
+            </div>
+          </span>
+
+          <span></span>
+
+          <span></span>
+
+          <div>
+          <em>Just <span>1mb, includes code and images</span>.</em>
+          </div>
+        </span>
+      </td>
+      </tr><tr data-name="Closure Tools" data-tags="" data-size="0">
+      <td>
+        <span>
+          <a href="http://code.google.com/closure/" data-handlebars-id="3"><span>Closure Tools</span></a>
+          <p class="description"><span>Closure Tools is a set of open-source JavaScript tools behind some of Google's big web apps like Gmail, Google Maps, and Google Docs.</span></p>
+
+          <span></span>
+
+          <span></span>
+
+          <span></span>
+
+          <div>
+          <em>Just <span>modules can be loaded dynamically</span>.</em>
+          </div>
+        </span>
+      </td>
+      </tr><tr data-name="Dojo Toolkit" data-tags="widgets" data-size="3.9">
+      <td>
+        <span>
+          <a href="http://dojotoolkit.org/" data-handlebars-id="4"><span>Dojo Toolkit</span></a>
+          <p class="description"><span>Dojo Toolkit is an open source modular JavaScript toolkit designed to ease the rapid development of cross-platform, JavaScript/Ajax-based applications and web sites.</span></p>
+
+          <span></span>
+
+          <span></span>
+
+          <span></span>
+
+          <div>
+          <em>Just <span>3.9K - 5MB; applications load modules dynamically</span>.</em>
+          </div>
+        </span>
+      </td>
+      </tr><tr data-name="Ender" data-tags="" data-size="7.5">
+      <td>
+        <span>
+          <a href="http://ender.no.de/" data-handlebars-id="5"><span>Ender</span></a>
+          <p class="description"><span>Ender is an open, powerful, micro-to-macro API for composing your own custom JavaScript library; it wraps up application agnostic, independent modules into a slick, intuitive, and familiar interface so you don't have to.</span></p>
+
+          <span>
+            <div class="use-if">
+              Use <span>Ender</span> if:
+              <ul><li>You want to easily construct your own bespoke framework.</li></ul>
+            </div>
+          </span>
+
+          <span></span>
+
+          <span></span>
+
+          <div>
+          <em>Just <span>7.5K with default configuration. Will vary</span>.</em>
+          </div>
+        </span>
+      </td>
+      </tr><tr data-name="environ" data-tags="" data-size="1">
+      <td>
+        <span>
+          <a href="http://github.com/azer/environ" data-handlebars-id="6"><span>environ</span></a>
+          <p class="description"><span>Cross platform environment detection library.</span></p>
+
+          <span>
+            <div class="use-if">
+              Use <span>environ</span> if:
+              <ul><li>You want to detect what platform the user is running.</li><li>You want to detect what JavaScript engine the user's platform utilises.</li><li>You want to detect what rendering engine the user's browser utilises.</li></ul>
+            </div>
+          </span>
+
+          <span></span>
+
+          <span></span>
+
+          <div>
+          <em>Just <span>1K</span>.</em>
+          </div>
+        </span>
+      </td>
+      </tr><tr data-name="functools" data-tags="" data-size="2">
+      <td>
+        <span>
+          <a href="http://github.com/azer/functools" data-handlebars-id="7"><span>functools</span></a>
+          <p class="description"><span>A minimal JavaScript library for functional operations.</span></p>
+
+          <span></span>
+
+          <span></span>
+
+          <span></span>
+
+          <div>
+          <em>Just <span>2K</span>.</em>
+          </div>
+        </span>
+      </td>
+      </tr><tr data-name="Handlebars" data-tags="" data-size="8">
+      <td>
+        <span>
+          <a href="http://handlebars.strobeapp.com/" data-handlebars-id="8"><span>Handlebars</span></a>
+          <p class="description"><span>Mustache-compatible semantic templating engine.</span></p>
+
+          <span></span>
+
+          <span></span>
+
+          <span></span>
+
+          <div>
+          <em>Just <span>8K</span>.</em>
+          </div>
+        </span>
+      </td>
+      </tr><tr data-name="jQuery" data-tags="dom" data-size="31">
+      <td>
+        <span>
+          <a href="http://www.jquery.com" data-handlebars-id="9"><span>jQuery</span></a>
+          <p class="description"><span>jQuery is a fast and concise JavaScript library that simplifies HTML document traversing, event handling, animating, and Ajax interactions for rapid web development.</span></p>
+
+          <span>
+            <div class="use-if">
+              Use <span>jQuery</span> if:
+              <ul><li>You need DOM manipulation or event handling across all browsers.</li></ul>
+            </div>
+          </span>
+
+          <span></span>
+
+          <span></span>
+
+          <div>
+          <em>Just <span>31K</span>.</em>
+          </div>
+        </span>
+      </td>
+      </tr><tr data-name="jQuery UI" data-tags="ui jQuery_plugins widgets" data-size="295">
+      <td>
+        <span>
+          <a href="http://www.jqueryui.com" data-handlebars-id="10"><span>jQuery UI</span></a>
+          <p class="description"><span>jQuery UI provides both low-level event handling of interactions and animations and high-level widgets for color picking, calendars, tabbed views, and more.</span></p>
+
+          <span>
+            <div class="use-if">
+              Use <span>jQuery UI</span> if:
+              <ul><li>You want JavaScript widgets and buttons.</li><li>You want to script interactions such as drag and drop or resizing.</li><li>You want to add more advanced animations to your pages.</li></ul>
+            </div>
+          </span>
+
+          <span>
+            <div class="dependencies">
+              Depends on:
+              <ul><li>jQuery (included in package)</li></ul>
+            </div>
+          </span>
+
+          <span></span>
+
+          <div>
+          <em>Just <span>295K, plus theme and additional assets. Can be customized on the download page.</span>.</em>
+          </div>
+        </span>
+      </td>
+      </tr><tr data-name="Knockout" data-tags="" data-size="25">
+      <td>
+        <span>
+          <a href="http://knockoutjs.com/" data-handlebars-id="11"><span>Knockout</span></a>
+          <p class="description"><span>Knockout is a JavaScript library that helps you to create rich, responsive display and editor user interfaces with a clean underlying data model. Any time you have sections of UI that update dynamically (e.g., changing depending on the user’s actions or when an external data source changes), KO can help you implement it more simply and maintainably.</span></p>
+
+          <span>
+            <div class="use-if">
+              Use <span>Knockout</span> if:
+              <ul><li>You want to define your data as a JavaScript model object, and then bind DOM elements and/or templates to it.</li></ul>
+            </div>
+          </span>
+
+          <span></span>
+
+          <span></span>
+
+          <div>
+          <em>Just <span>25K</span>.</em>
+          </div>
+        </span>
+      </td>
+      </tr><tr data-name="Modernizr" data-tags="" data-size="3.7">
+      <td>
+        <span>
+          <a href="http://www.modernizr.com" data-handlebars-id="12"><span>Modernizr</span></a>
+          <p class="description"><span>Modernizr is a JavaScript library that allows you to use CSS3 and HTML5 features while maintaining a fine level of control over browsers that don't support them yet.</span></p>
+
+          <span></span>
+
+          <span></span>
+
+          <span></span>
+
+          <div>
+          <em>Just <span>3.7K</span>.</em>
+          </div>
+        </span>
+      </td>
+      </tr><tr data-name="MooTools" data-tags="dom" data-size="25">
+      <td>
+        <span>
+          <a href="http://mootools.net/" data-handlebars-id="13"><span>MooTools</span></a>
+          <p class="description"><span>MooTools is a compact, modular, Object-Oriented JavaScript framework designed for the intermediate to advanced JavaScript developer. It provides cross-platform helpers for manipulating the DOM, handling events, animating elements, and extends JavaScript built-in classes with additional functionality.</span></p>
+
+          <span>
+            <div class="use-if">
+              Use <span>MooTools</span> if:
+              <ul><li>You need DOM manipulation or event handling across all browsers.</li></ul>
+            </div>
+          </span>
+
+          <span></span>
+
+          <span></span>
+
+          <div>
+          <em>Just <span>25K</span>.</em>
+          </div>
+        </span>
+      </td>
+      </tr><tr data-name="Morpheus" data-tags="animation" data-size="1.3">
+      <td>
+        <span>
+          <a href="https://github.com/ded/morpheus" data-handlebars-id="14"><span>Morpheus</span></a>
+          <p class="description"><span>Morpheus lets you "tween anything" in parallel on multiple elements, from integers to colors, with easing transitions, in a single high-performant loop utilizing the CPU-friendly requestAnimationFrame standard.</span></p>
+
+          <span>
+            <div class="use-if">
+              Use <span>Morpheus</span> if:
+              <ul><li>You want to animate multiple elements and have them stay in sync.</li></ul>
+            </div>
+          </span>
+
+          <span></span>
+
+          <span></span>
+
+          <div>
+          <em>Just <span>1.3K</span>.</em>
+          </div>
+        </span>
+      </td>
+      </tr><tr data-name="Raphael" data-tags="" data-size="2">
+      <td>
+        <span>
+          <a href="http://raphaeljs.com/" data-handlebars-id="15"><span>Raphael</span></a>
+          <p class="description"><span>A small JavaScript library that should simplify your work with vector graphics on the web.</span></p>
+
+          <span></span>
+
+          <span></span>
+
+          <span></span>
+
+          <div>
+          <em>Just <span>2K</span>.</em>
+          </div>
+        </span>
+      </td>
+      </tr><tr data-name="SproutCore" data-tags="mvc" data-size="29">
+      <td>
+        <span>
+          <a href="http://www.sproutcore.com" data-handlebars-id="16"><span>SproutCore</span></a>
+          <p class="description"><span>SproutCore provides both an MVC architecture and bindings, with views that automatically update any time properties change.</span></p>
+
+          <span>
+            <div class="use-if">
+              Use <span>SproutCore</span> if:
+              <ul><li>You want to avoid bugs related to keeping the DOM in sync with your data model.</li><li>You want stateful MVC, like you'd find in Cocoa.</li></ul>
+            </div>
+          </span>
+
+          <span>
+            <div class="dependencies">
+              Depends on:
+              <ul><li>jQuery</li></ul>
+            </div>
+          </span>
+
+          <span></span>
+
+          <div>
+          <em>Just <span>29K</span>.</em>
+          </div>
+        </span>
+      </td>
+      </tr><tr data-name="Uki" data-tags="" data-size="34">
+      <td>
+        <span>
+          <a href="http://www.ukijs.org" data-handlebars-id="17"><span>Uki</span></a>
+          <p class="description"><span>Uki is a fast and simple JavaScript user interface toolkit for desktop-like web applications. It comes with a rich view-component library ranging from Slider to List and SplitPane.</span></p>
+
+          <span>
+            <div class="use-if">
+              Use <span>Uki</span> if:
+              <ul><li>You need a simple UI kit for creating desktop-like interfaces.</li></ul>
+            </div>
+          </span>
+
+          <span></span>
+
+          <span></span>
+
+          <div>
+          <em>Just <span>34K</span>.</em>
+          </div>
+        </span>
+      </td>
+      </tr><tr data-name="Underscore" data-tags="" data-size="3">
+      <td>
+        <span>
+          <a href="http://documentcloud.github.com/underscore/" data-handlebars-id="18"><span>Underscore</span></a>
+          <p class="description"><span>Underscore is a utility-belt library for JavaScript that provides a lot of the functional programming support that you would expect in Prototype.js (or Ruby), but without extending any of the built-in JavaScript objects.</span></p>
+
+          <span>
+            <div class="use-if">
+              Use <span>Underscore</span> if:
+              <ul><li>You need features of ECMAScript 5 in non-ES5 browsers.</li></ul>
+            </div>
+          </span>
+
+          <span></span>
+
+          <span></span>
+
+          <div>
+          <em>Just <span>3K</span>.</em>
+          </div>
+        </span>
+      </td>
+      </tr><tr data-name="xui" data-tags="dom mobile-only" data-size="8">
+      <td>
+        <span>
+          <a href="http://xuijs.com/" data-handlebars-id="19"><span>xui</span></a>
+          <p class="description"><span>A super micro tiny DOM library for authoring HTML5 mobile web applications.</span></p>
+
+          <span>
+            <div class="use-if">
+              Use <span>xui</span> if:
+              <ul><li>You are able to deliver different libraries depending on the platform, such as in PhoneGap builds.</li></ul>
+            </div>
+          </span>
+
+          <span></span>
+
+          <span>
+            <div class="browser-support">
+              <span>Different builds for WebKit, BlackBerry, and IE.</span>
+            </div>
+          </span>
+
+          <div>
+          <em>Just <span>8K or lower, depending on build</span>.</em>
+          </div>
+        </span>
+      </td>
+      </tr><tr data-name="YUI 3" data-tags="" data-size="15">
+      <td>
+        <span>
+          <a href="http://developer.yahoo.com/yui/3/" data-handlebars-id="20"><span>YUI 3</span></a>
+          <p class="description"><span>Yahoo!'s next-generation JavaScript and CSS library. It powers the new Yahoo! homepage, Yahoo! Mail, and many other Yahoo! sites.</span></p>
+
+          <span></span>
+
+          <span></span>
+
+          <span></span>
+
+          <div>
+          <em>Just <span>15K to start; modules are loaded dynamically</span>.</em>
+          </div>
+        </span>
+      </td>
+      </tr><tr data-name="Zepto" data-tags="dom mobile-only" data-size="4.8">
+      <td>
+        <span>
+          <a href="http://zeptojs.com/" data-handlebars-id="21"><span>Zepto</span></a>
+          <p class="description"><span>Zepto.js is a minimalist JavaScript framework for mobile WebKit browsers, with a jQuery-compatible syntax.</span></p>
+
+          <span>
+            <div class="use-if">
+              Use <span>Zepto</span> if:
+              <ul><li>You don't have to support desktop browsers and file size is important.</li></ul>
+            </div>
+          </span>
+
+          <span></span>
+
+          <span>
+            <div class="browser-support">
+              <span>Supports mobile WebKit browsers only.</span>
+            </div>
+          </span>
+
+          <div>
+          <em>Just <span>4.8K</span>.</em>
+          </div>
+        </span>
+      </td>
+      </tr></tbody></table>
+
     <em>This list is not even close to exhaustive. Please contribute your favorite library by following the instructions below.</em>
 
     <div id="contribute">
@@ -116,9 +522,6 @@
       </footer>
   </div>
 
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
-  <script>!window.jQuery && document.write(unescape('%3Cscript src="js/libs/jquery-1.6.1.min.js"%3E%3C/script%3E'))</script>
-  <script src="js/libs/sproutcore-2.0.a.3.min.js"></script>
   <script src="js/app.js"></script>
 </body>
 </html>
