@@ -201,6 +201,15 @@ EveryJS.libraries = [
       "You want to detect what rendering engine the user's browser utilises."
     ],
     size: 1
+  },
+  {
+    name: "scaleApp",
+    website: "http://github.com/flosse/scaleApp",
+    license: "MIT",
+    description: "scaleApp is a JavaScript framework for scalable One-Page-Applications.", 
+    size: 105K,
+    dependencies: ["jQuery (included in package)"],
+    tags: ['mvc', 'jQuery', 'dom'],
   }
 ];
 
