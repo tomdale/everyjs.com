@@ -3,7 +3,7 @@ var EveryJS = SC.Application.create();
 EveryJS.libraries = [
   {
     name: "jQuery",
-    website: "http://www.jquery.com",
+    website: "http://jquery.com/",
     description: "jQuery is a fast and concise JavaScript library that simplifies HTML document traversing, event handling, animating, and Ajax interactions for rapid web development.",
     useIf: [
       "You need DOM manipulation or event handling across all browsers."
@@ -16,7 +16,7 @@ EveryJS.libraries = [
 
   {
     name: "jQuery UI",
-    website: "http://www.jqueryui.com",
+    website: "http://jqueryui.com/",
     description: "jQuery UI provides both low-level event handling of interactions and animations and high-level widgets for color picking, calendars, tabbed views, and more.",
     useIf: [
       "You want JavaScript widgets and buttons.",
@@ -201,6 +201,12 @@ EveryJS.libraries = [
       "You want to detect what rendering engine the user's browser utilises."
     ],
     size: 1
+  },
+  {
+    name: "Benchmark.js",
+    website: "http://benchmarkjs.com/",
+    description: "A benchmarking library that works on nearly all JavaScript platforms, supports high-resolution timers, and returns statistically significant results.",
+    size: 4.9
   }
 ];
 
