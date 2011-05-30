@@ -122,6 +122,12 @@ EveryJS.libraries = [
     website: "http://developer.yahoo.com/yui/3/",
     description: "Yahoo!'s next-generation JavaScript and CSS library. It powers the new Yahoo! homepage, Yahoo! Mail, and many other Yahoo! sites.",
     size: "15K to start; modules are loaded dynamically"
+  },
+  {
+    name: "Closure Tools",
+    website: "http://code.google.com/closure/",
+    description: "Closure Tools is a set of open-source JavaScript tools behind some of Google's big web apps like Gmail, Google Maps, and Google Docs.",
+    size: "modules can be loaded dynamically"
   }
 ];
 
