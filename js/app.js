@@ -209,7 +209,7 @@ EveryJS.libraries = [
     useIf: [
       "You want to build an audio Web application with an HTML5 GUI, automations and MozAudio / Web API support."
     ],
-    size: modular
+    size: modular (min 30, max 200)
   }
 ];
 
