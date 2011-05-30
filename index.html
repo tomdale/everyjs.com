@@ -41,7 +41,25 @@
       <p>The list of JavaScript libraries is generated dynamically. Please enable JavaScript in your browser.</p>
     </noscript>
     <script type="text/html">
-      {{#collection contentBinding="EveryJS.listController" tagName="table"}}
+      {{#view EveryJS.SortByView}}
+        Sort by
+        <select>
+          <option value="name">Name</option>
+          <option value="size">Size</option>
+        </select>
+      {{/view}}
+      {{#view EveryJS.FilterByView}}
+      Filter by Type
+      <select>
+          <option value="all">All</option>
+          <option value="dom">DOM manipulation</option>
+          <option value="animation">Animation</option>
+          <option value="mvc">MVC</option>
+          <option value="mobile-only">Mobile-only</option>
+        </select>
+      {{/view}}
+
+      {{#collection EveryJS.ListView tagName="table"}}
       <td>
         {{#with content}}
           <a {{bindAttr href="website"}}>{{name}}</a>

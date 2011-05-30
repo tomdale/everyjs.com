@@ -25,7 +25,7 @@ EveryJS.libraries = [
     ],
     dependencies: ["jQuery (included in package)"],
     license: "MIT or GPL Version 2",
-    tags: ["ui", "jQuery plugins"],
+    tags: ["ui", "jQuery plugins", "widgets"],
     size: "295K, plus theme and additional assets. Can be customized on the download page."
   },
 
@@ -47,6 +47,7 @@ EveryJS.libraries = [
       "You want to avoid bugs related to keeping the DOM in sync with your data model.",
       "You want stateful MVC, like you'd find in Cocoa."
     ],
+    tags: ["mvc"],
     dependencies: ["jQuery"],
     size: 29
   },
@@ -56,6 +57,7 @@ EveryJS.libraries = [
     website: "http://documentcloud.github.com/backbone/",
     description: "Backbone supplies structure to JavaScript-heavy applications by providing models with key-value binding and custom events, collections with a rich API of enumerable functions, views with declarative event handling, and connects it all to your existing application over a RESTful JSON interface.",
     dependencies: ["Underscore", "jQuery or Zepto (optional but recommended)"],
+    tags: ['mvc'],
     size: 3.9
   },
 
@@ -63,7 +65,8 @@ EveryJS.libraries = [
     name: "Dojo Toolkit",
     website: "http://dojotoolkit.org/",
     description: "Dojo Toolkit is an open source modular JavaScript toolkit designed to ease the rapid development of cross-platform, JavaScript/Ajax-based applications and web sites.",
-    size: "3.9K - 5MB; applications load modules dynamically"
+    size: "3.9K - 5MB; applications load modules dynamically",
+    tags: ['widgets']
   },
 
   {
@@ -71,6 +74,7 @@ EveryJS.libraries = [
     website: "http://mootools.net/",
     description: "MooTools is a compact, modular, Object-Oriented JavaScript framework designed for the intermediate to advanced JavaScript developer. It provides cross-platform helpers for manipulating the DOM, handling events, animating elements, and extends JavaScript built-in classes with additional functionality.",
     useIf: [ "You need DOM manipulation or event handling across all browsers." ],
+    tags: ['dom'],
     size: 25
   },
 
@@ -81,6 +85,7 @@ EveryJS.libraries = [
     useIf: [
       "You want to animate multiple elements and have them stay in sync."
     ],
+    tags: ['animation'],
     size: 1.3
   },
 
@@ -92,6 +97,7 @@ EveryJS.libraries = [
     useIf: [
       "You are able to deliver different libraries depending on the platform, such as in PhoneGap builds."
     ],
+    tags: ['dom', 'mobile-only'],
     size: "8K or lower, depending on build"
   },
 
@@ -100,6 +106,7 @@ EveryJS.libraries = [
     website: "http://zeptojs.com/",
     description: "Zepto.js is a minimalist JavaScript framework for mobile WebKit browsers, with a jQuery-compatible syntax.",
     browserSupport: "Supports mobile WebKit browsers only.",
+    tags: ['dom', 'mobile-only'],
     useIf: [
       "You don't have to support desktop browsers and file size is important."
     ],
@@ -148,6 +155,7 @@ EveryJS.libraries = [
     dependencies: null,
     license: "LGPL",
     tags: ['objective-j'],
+    sortSize: 1024,
     size: "1mb, includes code and images"
   },
   {
@@ -201,7 +209,70 @@ EveryJS.libraries.sort(function(a,b) {
 });
 
 EveryJS.listController = SC.ArrayProxy.create({
-  content: EveryJS.libraries
+  contentBinding: 'EveryJS.libraries',
+
+  sortBy: 'name',
+  filterBy: null,
+
+  arrangedObjects: function(key, value) {
+    var content = this.get('content'),
+        sortBy = this.get('sortBy'),
+        filterBy = this.get('filterBy'),
+        arrangedObjects, tags;
+
+    if (value !== undefined) { return value; }
+    if (sortBy === this._lastSort && filterBy === this._lastFilter) {
+      return this._lastVal;
+    }
+    if (!content) { return null; }
+
+    // Eliminate any items that don't match our filter.
+    if (filterBy) {
+      arrangedObjects = [];
+      content.forEach(function(item) {
+        tags = SC.get(item, 'tags');
+        if (tags && tags.indexOf(filterBy) > -1) {
+          arrangedObjects.push(item);
+        }
+      });
+    } else {
+      arrangedObjects = SC.copy(content);
+    }
+
+    arrangedObjects.sort(function(a, b) {
+      if (sortBy === 'size') {
+        a = a.sortSize || a[sortBy];
+        b = b.sortSize || b[sortBy];
+      } else {
+        a = a[sortBy];
+        b = b[sortBy];
+      }
+
+      if (sortBy === 'size') {
+        a = parseFloat(a);
+        b = parseFloat(b);
+      }
+
+      if (typeof a === 'string') {
+        a = a.toLowerCase();
+      }
+      if (typeof b === 'string') {
+        b = b.toLowerCase();
+      }
+
+      console.log("Comparing ",a,' to ',b);
+      return SC.compare(a, b);
+    });
+
+    this._lastVal = arrangedObjects;
+    this._lastFilter = filterBy;
+    this._lastSort = sortBy;
+    return arrangedObjects;
+  }.property('sortBy', 'filterBy')
+});
+
+EveryJS.ListView = SC.CollectionView.extend({
+  contentBinding: 'EveryJS.listController.arrangedObjects'
 });
 
 EveryJS.SizeView = SC.View.extend({
@@ -215,6 +286,20 @@ EveryJS.SizeView = SC.View.extend({
       return size;
     }
   }.property('size')
+});
+
+EveryJS.FilterByView = SC.View.extend({
+  change: function(evt) {
+    var elem = this.$('select');
+    EveryJS.listController.set('filterBy', elem.val());
+  }
+});
+
+EveryJS.SortByView = SC.View.extend({
+  change: function(evt) {
+    var elem = this.$('select');
+    EveryJS.listController.set('sortBy', elem.val());
+  }
 });
 
 Handlebars.registerHelper('list', function(key) {
