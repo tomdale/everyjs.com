@@ -201,6 +201,18 @@ EveryJS.libraries = [
       "You want to detect what rendering engine the user's browser utilises."
     ],
     size: 1
+  },
+  {
+    name: "oCanvas",
+    website: "http://ocanvas.org/",
+    description: "JavaScript library for object-based canvas drawing.",
+    useIf: [
+      "You want to build things with HTML5 Canvas a bit easier."
+    ],
+    dependencies: null,
+    license: "MIT",
+    tags: ['canvas'],
+    size: 15
   }
 ];
 
