@@ -171,6 +171,15 @@ EveryJS.libraries = [
     size: 2
   },
   {
+    name: "JavaScriptMVC",
+    website: "http://javascriptmvc.com",
+    description: "JavaScriptMVC is JavaScript framework that packages the best ideas in web application development.",
+    license: "MIT",
+    dependencies: "jQuery",
+    tags: ["mvc","DOM","jQuery plugins"],
+    size: "Depends on which components you use, but Model-View-Controller libraries are 7.4k combined."
+  },
+  {
     name: "Knockout",
     website: "http://knockoutjs.com/",
     description: "Knockout is a JavaScript library that helps you to create rich, responsive display and editor user interfaces with a clean underlying data model. Any time you have sections of UI that update dynamically (e.g., changing depending on the user’s actions or when an external data source changes), KO can help you implement it more simply and maintainably.",
