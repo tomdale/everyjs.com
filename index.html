@@ -1,0 +1,89 @@
+<!doctype html>
+<!--[if lt IE 7 ]> <html lang="en" class="no-js ie6"> <![endif]--> <!--[if IE 7 ]>    <html lang="en" class="no-js ie7"> <![endif]--> <!--[if IE 8 ]>    <html lang="en" class="no-js ie8"> <![endif]--> <!--[if IE 9 ]>    <html lang="en" class="no-js ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <title></title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="shortcut icon" href="/favicon.ico">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="stylesheet" href="css/style.css?v=2">
+
+  <script type="text/javascript" src="http://use.typekit.com/mqp4vpt.js"></script>
+  <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+
+
+  <!--[if lt IE 9]>
+  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+</head>
+<body>
+  <div id="wrapper">
+    <h1>EveryJS</h1>
+    <h2>The right tool for the job.</h2>
+
+    <h3>Libraries</h3>
+    <script type="text/html">
+      {{#collection contentBinding="EveryJS.listController" tagName="table"}}
+      <td>
+        {{#with content}}
+          <a {{bindAttr href="website"}}>{{name}}</a>
+          <p class="description">{{description}}</p>
+
+          {{#if dependencies}}
+            <div class="dependencies">
+              Depends on:
+              {{list dependencies}}
+            </div>
+          {{/if}}
+
+          {{#if browserSupport}}
+            <div class="browser-support">
+              {{browserSupport}}
+            </div>
+          {{/if}}
+
+          {{#view EveryJS.SizeView}}
+          <em>Just {{sizeString}}.</em>
+          {{/view}}
+        {{/with}}
+      </td>
+      {{/collection}}
+    </script>
+    <em>This is hardly exhaustive. Please contribute your favorite library by following the instructions below.</em>
+
+    <div id="contribute">
+      <h3>Contribute</h3>
+      <p>To contribute your favorite JavaScript library, visit the <a href="https://github.com/tomdale/everyjs.com">GitHub page</a>,
+      clone the repository, add the library to the <code>EveryJS.libraries</code> array, then submit a pull request.</p>
+      <p>The order in which you add your library is unimportant. The list is automatically alphabetized. More sophisticated filtering is coming soon.</p>
+    </div>
+
+    <div id="rules">
+      <h3>House Rules</h3>
+
+      <ol>
+        <li>The site belongs to the community. Libraries of any size or popularity are welcome. We filter based on quality.</li>
+        <li>If a library is not accepted, we will provide a reason, and steps for the maintainer to take to get it accepted.</li>
+        <li>For now, browser libraries only. I'm considering the best way to list helpful things like CoffeeScript, Jammit and UglifyJS.</li>
+      </ol>
+
+      <footer>
+        <p>&copy;2011 <a href="http://twitter.com/tomdale">Tom Dale</a> &amp; contributors. Because we're all in this together.</p>
+        <p>Inspired by Thomas Fuchs' <a href="http://www.microjs.com/">microjs.com</a></p>
+        <p>Hosted on <a href="http://www.strobecorp.com">Strobe</a></p>
+      </footer>
+  </div>
+
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
+  <script>!window.jQuery && document.write(unescape('%3Cscript src="js/libs/jquery-1.6.1.min.js"%3E%3C/script%3E'))</script>
+  <script src="js/libs/sproutcore-2.0.a.2.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
