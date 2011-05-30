@@ -227,7 +227,7 @@ EveryJS.listController = SC.ArrayProxy.create({
     if (!content) { return null; }
 
     // Eliminate any items that don't match our filter.
-    if (filterBy) {
+    if (filterBy && filterBy !== 'all') {
       arrangedObjects = [];
       content.forEach(function(item) {
         tags = SC.get(item, 'tags');
