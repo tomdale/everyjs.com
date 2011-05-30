@@ -18,7 +18,7 @@
     on(filterByEl, "change", filterLibraries);
   });
 
-  numberPattern = /^(?:[\d.]+)?$/;
+  var numberPattern = /^(?:[\d.]+)?$/;
 
   function getLibraryElements() {
     var elements = librariesEl.getElementsByTagName("tr"), result = [];
