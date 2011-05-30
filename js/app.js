@@ -143,7 +143,26 @@ EveryJS.libraries = [
     website: "http://github.com/azer/functools",
     description: "A minimal JavaScript library for functional operations.", 
     size: 2
+  },
+  {
+    name: "Knockout",
+    website: "http://knockoutjs.com/",
+    description: "Knockout is a JavaScript library that helps you to create rich, responsive display and editor user interfaces with a clean underlying data model. Any time you have sections of UI that update dynamically (e.g., changing depending on the user’s actions or when an external data source changes), KO can help you implement it more simply and maintainably.",
+    useIf: [
+      "You want to define your data as a JavaScript model object, and then bind DOM elements and/or templates to it."
+    ],
+    size: 25
+  },
+  {
+    name: "Knockout",
+    website: "http://knockoutjs.com/",
+    description: "Knockout is a JavaScript library that helps you to create rich, responsive display and editor user interfaces with a clean underlying data model. Any time you have sections of UI that update dynamically (e.g., changing depending on the user’s actions or when an external data source changes), KO can help you implement it more simply and maintainably.",
+    useIf: [
+      "You want to define your data as a JavaScript model object, and then bind DOM elements and/or templates to it."
+    ],
+    size: 25
   }
+
 ];
 
 EveryJS.libraries.sort(function(a,b) {
