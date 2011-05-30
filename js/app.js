@@ -70,6 +70,15 @@ EveryJS.libraries = [
   },
 
   {
+    name: "MochiKit",
+    website: "http://mochi.github.com/mochikit/",
+    description: "'makes JavaScript suck a bit less' - A lightweight library providing powerful cross-platform DOM manipulation, Ajax, event handling and signaling.  MochiKit.Visual can perform effects and transitions and MochiKit.Selector provides jQuery style CSS selection.  MochiKit.Base allows you to program in a functional style, MochiKit.Iter is inspired by Python itertools.",
+    useIf: [ "You need a solid base on which to build advanced functionality." ],
+    tags: ['dom'],
+    size: "50K for non-web modules, 135K including all web modules. Can be customized at http://mochi.github.com/mochikit/packed/MochiKit/customize.html."
+  },
+
+  {
     name: "MooTools",
     website: "http://mootools.net/",
     description: "MooTools is a compact, modular, Object-Oriented JavaScript framework designed for the intermediate to advanced JavaScript developer. It provides cross-platform helpers for manipulating the DOM, handling events, animating elements, and extends JavaScript built-in classes with additional functionality.",
