@@ -28,6 +28,19 @@ EveryJS.libraries = [
     tags: ["ui", "jQuery plugins", "widgets"],
     size: "295K, plus theme and additional assets. Can be customized on the download page."
   },
+  
+  {
+    name: "OpenLayers",
+    website: "http://www.openlayers.org/",
+    description: "OpenLayers is an open source JavaScript library for displaying map data in web browsers.",
+    useIf: [
+      "You want rich web-based geographic applications similar to Google Maps and Bing Maps."
+    ],
+    license: "BSD-style",
+    tags: ["mapping"],
+    size: "7,652K"
+  },
+  
 
   {
     name: "Ender",
@@ -67,6 +80,15 @@ EveryJS.libraries = [
     description: "Dojo Toolkit is an open source modular JavaScript toolkit designed to ease the rapid development of cross-platform, JavaScript/Ajax-based applications and web sites.",
     size: "3.9K - 5MB; applications load modules dynamically",
     tags: ['widgets']
+  },
+
+  {
+    name: "MochiKit",
+    website: "http://mochi.github.com/mochikit/",
+    description: "'makes JavaScript suck a bit less' - A lightweight library providing powerful cross-platform DOM manipulation, Ajax, event handling and signaling.  MochiKit.Visual can perform effects and transitions and MochiKit.Selector provides jQuery style CSS selection.  MochiKit.Base allows you to program in a functional style, MochiKit.Iter is inspired by Python itertools.",
+    useIf: [ "You need a solid base on which to build advanced functionality." ],
+    tags: ['dom'],
+    size: "50K for non-web modules, 135K including all web modules. Can be customized at http://mochi.github.com/mochikit/packed/MochiKit/customize.html."
   },
 
   {
