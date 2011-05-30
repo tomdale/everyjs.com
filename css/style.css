@@ -142,6 +142,7 @@ a:hover { color: #036; }
 
 body {
   min-width: 760px;
+  font-family: "Helvetica", sans-serif;
 }
 
 #wrapper {
