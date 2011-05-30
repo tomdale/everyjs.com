@@ -250,6 +250,15 @@ EveryJS.libraries = [
 		tags: ["mvc"],
     dependencies: ["jQuery"],
     size: "6.7K - 86K; applications load modules dynamically"
+  },
+  {
+    name: "scaleApp",
+    website: "http://github.com/flosse/scaleApp",
+    license: "MIT",
+    description: "scaleApp is a JavaScript framework for scalable One-Page-Applications.", 
+    size: 105K,
+    dependencies: ["jQuery (included in package)"],
+    tags: ['mvc', 'jQuery', 'dom'],
   }
 ];
 
