@@ -15,6 +15,21 @@ EveryJS.libraries = [
   },
 
   {
+    name: "jQuery UI",
+    website: "http://www.jqueryui.com",
+    description: "jQuery UI provides both low-level event handling of interactions and animations and high-level widgets for color picking, calendars, tabbed views, and more.",
+    useIf: [
+      "You want fancy JavaScript widgets and buttons.",
+      "You want to easily script interactions such as drag+drop and resizing.",
+      "You want to add some JavaScript animations to your pages."
+    ],
+    dependencies: ["jQuery (included in package)"],
+    license: "MIT or GPL Version 2",
+    tags: ["ui", "jQuery plugins"],
+    size: "By default, 295K of JavaScript, plus whatever theme is used. Can be customized on the download page."
+  }
+
+  {
     name: "Ender",
     website: "http://ender.no.de/",
     description: "Ender is an open, powerful, micro-to-macro API for composing your own custom JavaScript library; it wraps up application agnostic, independent modules into a slick, intuitive, and familiar interface so you don't have to.",
