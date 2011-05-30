@@ -28,6 +28,19 @@ EveryJS.libraries = [
     tags: ["ui", "jQuery plugins", "widgets"],
     size: "295K, plus theme and additional assets. Can be customized on the download page."
   },
+  
+  {
+    name: "OpenLayers",
+    website: "http://www.openlayers.org/",
+    description: "OpenLayers is an open source JavaScript library for displaying map data in web browsers.",
+    useIf: [
+      "You want rich web-based geographic applications similar to Google Maps and Bing Maps."
+    ],
+    license: "BSD-style",
+    tags: ["mapping"],
+    size: "7,652K"
+  },
+  
 
   {
     name: "Ender",
