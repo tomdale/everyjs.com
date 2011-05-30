@@ -260,7 +260,6 @@ EveryJS.listController = SC.ArrayProxy.create({
         b = b.toLowerCase();
       }
 
-      console.log("Comparing ",a,' to ',b);
       return SC.compare(a, b);
     });
 
