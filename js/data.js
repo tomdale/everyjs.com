@@ -258,7 +258,7 @@ EveryJS_libraries = [
     dependencies: ["Prototype", "Raphaël"],
     size: "36kb or less"
   },
-	{
+  {
     name: "JavaScriptMVC",
     website: "http://javascriptvc.com",
     description: "JavaScriptMVC is an open-source framework containing the best ideas in jQuery development. It guides you to successfully completed projects by promoting best practices, maintainability, and convention over configuration..", 
@@ -267,7 +267,7 @@ EveryJS_libraries = [
       "You want great performance.",
       "You don't want to care about memory issues in long lived apps"
     ],
-		tags: ["mvc"],
+    tags: ["mvc"],
     dependencies: ["jQuery"],
     size: "6.7K - 86K; applications load modules dynamically"
   },
@@ -278,7 +278,7 @@ EveryJS_libraries = [
     description: "scaleApp is a JavaScript framework for scalable One-Page-Applications.", 
     size: 105,
     dependencies: ["jQuery (included in package)"],
-    tags: ['mvc', 'jQuery', 'dom'],
+    tags: ['mvc', 'jQuery', 'dom']
   },
   {
     name: "Benchmark.js",
@@ -295,26 +295,34 @@ EveryJS_libraries = [
     size: 2
   },
   {
-      name: "Milk",
-      website: "https://github.com/pvande/Milk",
-      description: "Spec-compatible (v1.1+λ) Mustache templating: written in CoffeeScript, runnable anywhere.",
-      useIf: [
-        "You need a simple, safe templating language."
-      ],
-      dependencies: [ 'None' ],
-      license: "GIFT",
-      tags: ['mustache', 'templating', 'coffeescript'],
-      size: 1.9
-    },
+    name: "Milk",
+    website: "https://github.com/pvande/Milk",
+    description: "Spec-compatible (v1.1+λ) Mustache templating: written in CoffeeScript, runnable anywhere.",
+    useIf: [
+      "You need a simple, safe templating language."
+    ],
+    dependencies: [ 'None' ],
+    license: "GIFT",
+    tags: ['mustache', 'templating', 'coffeescript'],
+    size: 1.9
+  },
 
   {
     name: "LABjs",
     website: "http://labjs.com/",
-    description: "LABjs is a dynamic script loader intended to replace the use of the ugly, non-performant <script> tag with a flexible and performance-optimized alternative API.", 
+    description: "LABjs is a dynamic script loader intended to replace the use of the ugly, non-performant &lt;script&gt; tag with a flexible and performance-optimized alternative API.", 
     useIf: [
       "You want to improve performance by loading scripts in parallel and without blocking other resources."
     ],
     size: 2.1
+  },
+  
+  {
+    name: "ArtJs",
+    website: "http://artjs.org",
+    description: "ArtJs is JavaScript framework of general purpose. It allows you to select or manipulate DOM elements, perform AJAX requests, provides load of helper methods for String, Date and other native classes, etc.",
+    tags: ["dom"],
+    size: 70
   }
 ];
 
