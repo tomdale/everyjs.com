@@ -162,6 +162,18 @@ EveryJS.libraries = [
     size: 34
   },
   {
+    name: "Milk",
+    website: "https://github.com/pvande/Milk",
+    description: "Spec-compatible (v1.1+λ) Mustache templating: written in CoffeeScript, runnable anywhere.",
+    useIf: [
+      "You need a simple, safe templating language."
+    ],
+    dependencies: [ 'None' ],
+    license: "GIFT",
+    tags: ['mustache', 'templating', 'coffeescript'],
+    size: 1.9
+  },
+  {
     name: "YUI 3",
     website: "http://developer.yahoo.com/yui/3/",
     description: "Yahoo!'s next-generation JavaScript and CSS library. It powers the new Yahoo! homepage, Yahoo! Mail, and many other Yahoo! sites.",
