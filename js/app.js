@@ -212,6 +212,18 @@ EveryJS.libraries = [
     ],
     size: "1MB or lower, depending on build",
     tags: ['ui']
+  },
+  {
+    name: "oCanvas",
+    website: "http://ocanvas.org/",
+    description: "JavaScript library for object-based canvas drawing.",
+    useIf: [
+      "You want to build things with HTML5 Canvas a bit easier."
+    ],
+    dependencies: null,
+    license: "MIT",
+    tags: ['canvas'],
+    size: 15
   }
 ];
 
