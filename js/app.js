@@ -122,6 +122,12 @@ EveryJS.libraries = [
     website: "http://developer.yahoo.com/yui/3/",
     description: "Yahoo!'s next-generation JavaScript and CSS library. It powers the new Yahoo! homepage, Yahoo! Mail, and many other Yahoo! sites.",
     size: "15K to start; modules are loaded dynamically"
+  },
+  {
+    name: "functools",
+    website: "http://functools.kodfabrik.com",
+    description: "Functools is a library for functional programming written in JavaScript. It's based on a CommonJS module that consists of several function manipulation and list iteration tools.",
+    size: 2
   }
 ];
 
