@@ -295,6 +295,19 @@ EveryJS_libraries = [
     size: 2
   },
   {
+      name: "Milk",
+      website: "https://github.com/pvande/Milk",
+      description: "Spec-compatible (v1.1+λ) Mustache templating: written in CoffeeScript, runnable anywhere.",
+      useIf: [
+        "You need a simple, safe templating language."
+      ],
+      dependencies: [ 'None' ],
+      license: "GIFT",
+      tags: ['mustache', 'templating', 'coffeescript'],
+      size: 1.9
+    },
+
+  {
     name: "LABjs",
     website: "http://labjs.com/",
     description: "LABjs is a dynamic script loader intended to replace the use of the ugly, non-performant <script> tag with a flexible and performance-optimized alternative API.", 
@@ -302,7 +315,7 @@ EveryJS_libraries = [
       "You want to improve performance by loading scripts in parallel and without blocking other resources."
     ],
     size: 2.1
-  }  
+  }
 ];
 
 if (window.EveryJS && window.EveryJS.loaded) { window.EveryJS.loaded(); }
