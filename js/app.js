@@ -48,7 +48,6 @@ EveryJS.libraries = [
     name: "Dojo Toolkit",
     website: "http://documentcloud.github.com/backbone/",
     description: "Dojo Toolkit is an open source modular JavaScript library (or more specifically JavaScript toolkit) designed to ease the rapid development of cross-platform, JavaScript/Ajax-based applications and web sites.",
-    useIf: [ "You need DOM manipulation or event handling across all browsers." ],
     size: "3.9K - 5MB; applications load modules dynamically"
   },
 
