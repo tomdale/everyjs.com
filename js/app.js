@@ -19,15 +19,15 @@ EveryJS.libraries = [
     website: "http://www.jqueryui.com",
     description: "jQuery UI provides both low-level event handling of interactions and animations and high-level widgets for color picking, calendars, tabbed views, and more.",
     useIf: [
-      "You want fancy JavaScript widgets and buttons.",
-      "You want to easily script interactions such as drag+drop and resizing.",
-      "You want to add some JavaScript animations to your pages."
+      "You want JavaScript widgets and buttons.",
+      "You want to script interactions such as drag and drop or resizing.",
+      "You want to add more advanced animations to your pages."
     ],
     dependencies: ["jQuery (included in package)"],
     license: "MIT or GPL Version 2",
     tags: ["ui", "jQuery plugins"],
-    size: "By default, 295K of JavaScript, plus whatever theme is used. Can be customized on the download page."
-  }
+    size: "295K, plus theme and additional assets. Can be customized on the download page."
+  },
 
   {
     name: "Ender",
