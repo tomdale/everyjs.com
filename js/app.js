@@ -107,6 +107,16 @@ EveryJS.libraries = [
     ],
     size: 3
   },
+
+  {
+    name: "Uki",
+    website: "http://www.ukijs.org",
+    description: "Uki is a fast and simple JavaScript user interface toolkit for desktop-like web applications. It comes with a rich view-component library ranging from Slider to List and SplitPane.",
+    useIf: [
+      "You need a simple UI kit for creating desktop-like interfaces."
+    ],
+    size: 34
+  },
   {
     name: "YUI 3",
     website: "http://developer.yahoo.com/yui/3/",
