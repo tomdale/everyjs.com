@@ -237,6 +237,14 @@ EveryJS.libraries = [
     ],
     dependencies: ["Prototype", "Raphaël"],
     size: "36kb or less"
+  }, 
+  {
+    name: "Spine",
+    website: "http://maccman.github.com/spine",
+    description: "Spine is a lightweight framework for building JavaScript web applications. Spine gives you a MVC structure and then gets out of your way, allowing you to concentrate on the fun stuff, building awesome web applications.",
+    dependencies: ["jQuery or Zepto (optional but recommended)"],
+    tags: ['mvc'],
+    size: 2
   }
 ];
 
