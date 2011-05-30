@@ -201,6 +201,15 @@ EveryJS.libraries = [
       "You want to detect what rendering engine the user's browser utilises."
     ],
     size: 1
+  },
+  {
+    name: "KievII",
+    website: "http://kievII.net/",
+    description: "Web audio application / DSP library, with HTML5 frontend.", 
+    useIf: [
+      "You want to build an audio Web application with an HTML5 GUI, automations and MozAudio / Web API support."
+    ],
+    size: modular
   }
 ];
 
