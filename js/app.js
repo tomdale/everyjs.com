@@ -170,6 +170,12 @@ EveryJS.libraries = [
       "You want to define your data as a JavaScript model object, and then bind DOM elements and/or templates to it."
     ],
     size: 25
+  },
+  {
+    name: "Closure Tools",
+    website: "http://code.google.com/closure/",
+    description: "Closure Tools is a set of open-source JavaScript tools behind some of Google's big web apps like Gmail, Google Maps, and Google Docs.",
+    size: "modules can be loaded dynamically"
   }
 
 ];
