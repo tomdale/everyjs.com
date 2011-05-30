@@ -201,6 +201,17 @@ EveryJS.libraries = [
       "You want to detect what rendering engine the user's browser utilises."
     ],
     size: 1
+  },
+  {
+    name: "qooxdoo",
+    website: "http://qooxdoo.org/",
+    description: "qooxdoo is a universal JavaScript framework that enables you to create applications for a wide range of platforms. With its object-oriented programming model you build rich, interactive applications (RIAs), native-like apps for mobile devices, traditional web applications or even applications to run outside the browser.", 
+    useIf: [
+      "You need a UI kit for creating desktop-like interfaces.",
+      "You need a UI kit for creating mobile interfaces."
+    ],
+    size: "1MB or lower, depending on build",
+    tags: ['ui']
   }
 ];
 
