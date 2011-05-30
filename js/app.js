@@ -182,8 +182,18 @@ EveryJS.libraries = [
     website: "http://www.modernizr.com",
     description: "Modernizr is a JavaScript library that allows you to use CSS3 and HTML5 features while maintaining a fine level of control over browsers that don't support them yet.",
     size: 3.7
+  },
+  {
+    name: "environ",
+    website: "http://github.com/azer/environ",
+    description: "Cross platform environment detection library.", 
+    useIf: [
+      "You want to detect what platform the user is running.",
+      "You want to detect what JavaScript engine the user's platform utilises.",
+      "You want to detect what rendering engine the user's browser utilises."
+    ],
+    size: 1
   }
-
 ];
 
 EveryJS.libraries.sort(function(a,b) {
