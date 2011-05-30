@@ -295,7 +295,6 @@ EveryJS.libraries = [
     dependencies: ["jQuery or Zepto (optional but recommended)"],
     tags: ['mvc'],
     size: 2
-  }
   },
   {
     name: "LABjs",
