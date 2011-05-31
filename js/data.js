@@ -324,7 +324,9 @@ EveryJS_libraries = [
     useIf: [
       "You're looking for a high performance, lightweight, easy-to-use API."
     ],
-    size: 33
+    size: 33,
+    license: "MIT",
+    tags: ['dom']
   }
 ];
 
