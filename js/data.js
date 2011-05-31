@@ -315,6 +315,17 @@ EveryJS_libraries = [
       "You want to improve performance by loading scripts in parallel and without blocking other resources."
     ],
     size: 2.1
+  },
+
+
+  {
+    name: "History.js",
+    website: "http://github.com/balupton/history.js",
+    description: "History.js solves cross compatibility problems with the HTML5 History API and provides a graceful fallback for HTML4 browsers. Essentially, it allows you to use the HTML5 History API gracefully and consistently in all browsers.", 
+    useIf: [
+      "You want be using the HTML5 History API, not spending your time trying to get it working in more than one browser"
+    ],
+    size: 13
   }
 ];
 
