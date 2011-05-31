@@ -327,6 +327,20 @@ EveryJS_libraries = [
     size: 33,
     license: "MIT",
     tags: ['dom']
+  },
+  {
+    name: "Sencha Touch",
+    website: "http://www.sencha.com/products/touch/",
+    description: "Sencha Touch allows you to develop mobile web apps that look and feel native on iPhone, Android, and BlackBerry touch devices.",
+    useIf: [
+      "You need a rich, comprehensive, cross-platform web framework aimed at next generation, touch enabled, devices.",
+      "You want to build a self-contained MVC-style application that can be taken off-line",
+      "You need to use touch events like tap, double tap, swipe, tap and hold, pinch, and rotate.",
+      "You want beautiful resolution-independent themes, icons and animations.",
+    ],
+    size: "depends on usage; full library 120K",
+    license: "GNU GPL license v3, or Commercial, or OEM.",
+    tags: ['mobile-only', 'touch', 'tablet', 'iphone', 'ipad', 'android', 'html5', 'dom', 'mvc']
   }
 ];
 
