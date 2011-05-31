@@ -315,6 +315,17 @@ EveryJS_libraries = [
       "You want to improve performance by loading scripts in parallel and without blocking other resources."
     ],
     size: 2.1
+  },
+  {
+    name: "angular",
+    website: "http://angularjs.org/",
+    description: "Is a framework for building interactive client-side web apps using declarative html templates, 2-way data-binding and dependency injection. If you care about testability of your code and efficiency of your app's DOM manipulation, you'll love angular.", 
+    useIf: [
+      "You want to build rich apps much faster",
+      "Are sick of boilerplate dom manipulation."
+    ],
+    dependencies: ["optionally depends on jQuery (to enable advanced DOM manipulation features)"]
+    size: 24
   }
 ];
 
