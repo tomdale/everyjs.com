@@ -260,7 +260,7 @@ EveryJS_libraries = [
   },
 	{
     name: "JavaScriptMVC",
-    website: "http://javascriptvc.com",
+    website: "http://javascriptmvc.com",
     description: "JavaScriptMVC is an open-source framework containing the best ideas in jQuery development. It guides you to successfully completed projects by promoting best practices, maintainability, and convention over configuration..", 
     useIf: [
       "You want to build big applications on top of jQuery.",
