@@ -306,6 +306,19 @@ EveryJS_libraries = [
       tags: ['mustache', 'templating', 'coffeescript'],
       size: 1.9
     },
+    {
+      name: "picoCSS",
+      website: "https://github.com/vladocar/picoCSS",
+      description: "Basic CSS DOM manipulation and animation optimized for  for building mobile web apps",
+      browserSupport: "Supports mobile WebKit browsers only.",
+      useIf: [
+        "Basic CSS styling and animation"
+      ],
+      dependencies: [ 'None' ],
+      license: "MIT",
+      tags: ['dom', 'animation', 'mobile-only'],
+      size: 0.4
+    },
 
   {
     name: "LABjs",
