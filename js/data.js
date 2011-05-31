@@ -315,6 +315,16 @@ EveryJS_libraries = [
       "You want to improve performance by loading scripts in parallel and without blocking other resources."
     ],
     size: 2.1
+  },
+
+  {
+    name: "Ext Core",
+    website: "http://www.sencha.com/products/extcore/",
+    description: "Ext Core is a cross-browser JavaScript library for building dynamic web pages. Ext Core provides basic cross-browser abstractions for DOM querying, element selection and more.", 
+    useIf: [
+      "You're looking for a high performance, lightweight, easy-to-use API."
+    ],
+    size: 33
   }
 ];
 
