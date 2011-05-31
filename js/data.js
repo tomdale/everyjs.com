@@ -322,7 +322,7 @@ EveryJS_libraries = [
     website: "http://www.sencha.com/products/extcore/",
     description: "Ext Core is a cross-browser JavaScript library for building dynamic web pages. Ext Core provides basic cross-browser abstractions for DOM querying, element selection and more.", 
     useIf: [
-      "You're looking for a high performance, lightweight, easy-to-use API."
+      "You're looking for a high performance, lightweight, easy-to-use API"
     ],
     size: 33,
     license: "MIT",
@@ -333,14 +333,29 @@ EveryJS_libraries = [
     website: "http://www.sencha.com/products/touch/",
     description: "Sencha Touch allows you to develop mobile web apps that look and feel native on iPhone, Android, and BlackBerry touch devices.",
     useIf: [
-      "You need a rich, comprehensive, cross-platform web framework aimed at next generation, touch enabled, devices.",
+      "You need a rich, comprehensive, cross-platform web framework aimed at next generation, touch enabled, devices",
       "You want to build a self-contained MVC-style application that can be taken off-line",
-      "You need to use touch events like tap, double tap, swipe, tap and hold, pinch, and rotate.",
-      "You want beautiful resolution-independent themes, icons and animations.",
+      "You need to use touch events like tap, double tap, swipe, tap and hold, pinch, and rotate",
+      "You want beautiful resolution-independent themes, icons and animations",
     ],
     size: "depends on usage; full library 120K",
     license: "GNU GPL license v3, or Commercial, or OEM.",
     tags: ['mobile-only', 'touch', 'tablet', 'iphone', 'ipad', 'android', 'html5', 'dom', 'mvc']
+  },
+  {
+    name: "Ext JS 4",
+    website: "http://www.sencha.com/products/extjs/",
+    description: "A framework for building powerful desktop web applications using JavaScript and web standards.",
+    useIf: [
+      "You need a resilient MVC application architecture",
+      "You need to create plugin-free charts and vector graphics",
+      "You want a clean component-based model",
+      "You need rich modern UI widgets",
+      "You need cross-platform browser compatibility, back to IE6",
+    ],
+    size: "sized according to usage; full library 311K",
+    license: "GNU GPL license v3, or Commercial, or OEM.",
+    tags: ['mvc', 'component', 'charts', 'widgets']
   }
 ];
 
