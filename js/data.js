@@ -431,6 +431,21 @@ EveryJS_libraries = [
     size: "sized according to usage; full library 311K",
     license: "GNU GPL license v3, or Commercial, or OEM.",
     tags: ['mvc', 'component', 'charts', 'widgets']
+  },
+
+  {
+    name: "AmplifyJS",
+    website: "http://amplifyjs.com/",
+    description: "Amplify is a set of components designed to solve common web application problems with a simplistic API. Amplify's goal is to simplify all forms of data handling by providing a unified API for various data sources. Amplify's store component handles persistent client-side storage, using standards like localStorage and sessionStorage, but falling back on non-standard implementations for older browsers. Amplify's request adds some additional features to jQuery's ajax method while abstracting away the underlying data source.", 
+    useIf: [
+      "You need a publish/subscribe system with priority message support.",
+      "You need a wrapper for various persistent client-side storage systems.",
+      "You need an abstraction layer that can be used for any kind of request for data."
+    ],
+    license: "MIT / GPL",
+    tags: [ "JavaScript", "jQuery" ],
+    dependencies: [ "jQuery (only needed for Request AJAX component)" ],
+    size: 8
   }
 ];
 
