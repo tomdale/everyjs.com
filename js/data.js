@@ -325,13 +325,26 @@ EveryJS_libraries = [
     ],
     size: "modular: 30Kb to start, max about 200Kb"
   },
-  
+
   {
     name: "ArtJs",
     website: "http://artjs.org",
     description: "ArtJs is JavaScript framework of general purpose. It allows you to select or manipulate DOM elements, perform AJAX requests, provides load of helper methods for String, Date and other native classes, etc.",
     tags: ["dom"],
     size: 70
+  },
+
+  {
+    name: "picoCSS",
+    website: "https://github.com/vladocar/picoCSS",
+    description: "Basic CSS DOM manipulation and animation optimized for  for building mobile web apps",
+    browserSupport: "Supports mobile WebKit browsers only.",
+    useIf: [
+      "Basic CSS styling and animation"
+    ],
+    license: "MIT",
+    tags: ['dom', 'animation', 'mobile-only'],
+    size: 0.4
   }
 ];
 
