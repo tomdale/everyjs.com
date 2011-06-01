@@ -315,6 +315,15 @@ EveryJS_libraries = [
       "You want to improve performance by loading scripts in parallel and without blocking other resources."
     ],
     size: 2.1
+  },
+  {
+    name: "KievII",
+    website: "http://kievII.net/",
+    description: "Web audio application / DSP library, with HTML5 frontend.", 
+    useIf: [
+      "You want to build an audio Web application with an HTML5 GUI, automations and MozAudio / Web API support."
+    ],
+    size: "modular: 30Kb to start, max about 200Kb"
   }
 ];
 
