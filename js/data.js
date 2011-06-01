@@ -315,6 +315,12 @@ EveryJS_libraries = [
       "You want to improve performance by loading scripts in parallel and without blocking other resources."
     ],
     size: 2.1
+  },
+  {
+    name: "ExtJS",
+    website: "http://www.sencha.com/products/extjs/",
+    description: "ExtJS is a powerful open source and commercial javascript MVC framework with a new theming system using Compass (SASS).",
+    size: "1MB or less depending on what you include in your project"
   }
 ];
 
