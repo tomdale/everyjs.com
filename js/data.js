@@ -373,7 +373,23 @@ EveryJS_libraries = [
       "You want be using the HTML5 History API, not spending your time trying to get it working in more than one browser"
     ],
     size: 13
+  },
+
+  {
+    name: "Leaflet",
+    website: "http://leaflet.cloudmade.com",
+    description: "Leaflet is a lightweight, modern JavaScript library for interactive maps on both desktop and mobile browsers.",
+    useIf: [
+      "You want to embed responsive and nice-looking interactive maps into your web applications with ease",
+      "You need your online maps to work smoothly on modern mobile devices (iPhone, Android)",
+      "You want a mapping library that has a small, easy to undestand codebase and a clean, simple API",
+      "You like the power and simplicity of Google Maps API but want an open source solution"
+    ],
+    license: "BSD 2-clause",
+    tags: ["mapping", "maps", "gis"],
+    size: "63kb JS + 15kb assets (or less with a customized build)"
   }
+
 ];
 
 if (window.EveryJS && window.EveryJS.loaded) { window.EveryJS.loaded(); }
