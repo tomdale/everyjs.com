@@ -410,7 +410,7 @@ EveryJS_libraries = [
       "You need a rich, comprehensive, cross-platform web framework aimed at next generation, touch enabled, devices",
       "You want to build a self-contained MVC-style application that can be taken off-line",
       "You need to use touch events like tap, double tap, swipe, tap and hold, pinch, and rotate",
-      "You want beautiful resolution-independent themes, icons and animations",
+      "You want beautiful resolution-independent themes, icons and animations"
     ],
     size: "depends on usage; full library 120K",
     license: "GNU GPL license v3, or Commercial, or OEM.",
@@ -426,7 +426,7 @@ EveryJS_libraries = [
       "You need to create plugin-free charts and vector graphics",
       "You want a clean component-based model",
       "You need rich modern UI widgets",
-      "You need cross-platform browser compatibility, back to IE6",
+      "You need cross-platform browser compatibility, back to IE6"
     ],
     size: "sized according to usage; full library 311K",
     license: "GNU GPL license v3, or Commercial, or OEM.",
@@ -446,6 +446,18 @@ EveryJS_libraries = [
     tags: [ "JavaScript", "jQuery" ],
     dependencies: [ "jQuery (only needed for Request AJAX component)" ],
     size: 8
+  },
+
+  {
+    name: "angular",
+    website: "http://angularjs.org/",
+    description: "Is a framework for building interactive client-side web apps using declarative html templates, 2-way data-binding and dependency injection. If you care about testability of your code and efficiency of your app's DOM manipulation, you'll love angular.", 
+    useIf: [
+      "You want to build rich apps much faster",
+      "Are sick of boilerplate dom manipulation."
+    ],
+    dependencies: ["optionally depends on jQuery (to enable advanced DOM manipulation features)"],
+    size: 24
   }
 ];
 
