@@ -4,7 +4,7 @@ The right tool for the right job.
 This is the source code for the website everyjs.com, an index of modern
 JavaScript.
 
-To add your own library, fork this repository. Then, open js/app.js, and add
+To add your own library, fork this repository. Then, open js/data.js, and add
 an entry to the EveryJS.libraries array. Don't worry about where you put it;
 it'll be sorted alphabetically at runtime. Once you've pushed your changes,
 submit a pull request.
