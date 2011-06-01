@@ -191,6 +191,12 @@ EveryJS_libraries = [
     size: 2
   },
   {
+    name: "Processing.js",
+    website: "http://processingjs.org/",
+    description: "Processing.js makes your data visualizations, digital art, interactive animations, educational graphs, video games, etc. work using web standards and without any plug-ins.",
+    size: 284
+  },
+  {
     name: "Knockout",
     website: "http://knockoutjs.com/",
     description: "Knockout is a JavaScript library that helps you to create rich, responsive display and editor user interfaces with a clean underlying data model. Any time you have sections of UI that update dynamically (e.g., changing depending on the user’s actions or when an external data source changes), KO can help you implement it more simply and maintainably.",
