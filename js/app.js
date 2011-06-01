@@ -1,6 +1,29 @@
+
 var EveryJS = SC.Application.create();
 
 EveryJS.libraries = [
+  {
+    name: "Flow",
+    website: "https://github.com/bemson/Flow/",
+    description: "Flow is a JavaScript framework that defines and executes related functions. Flow is designed to reduce code complexity, redundancy, and concurrency, for confident web development.",
+    useIf: [
+      "You're tired of code becoming a mess, due to changing specifications or maintainers.",
+	  "You want to write code declaratively, in parity with business, design, and process logic."
+    ],
+    dependencies: [
+      "GSet (included with minified version)"
+    ],
+    size: 18
+  },
+  {
+    name: "GSet",
+    website: "https://github.com/bemson/GSet/",
+    description: "GSet protects objects from unwanted access and manipulation, while providing getter, setter and/or custom methods.",
+    useIf: [
+      "You define public objects for private objects."
+    ],
+    size: 4
+  },
   {
     name: "jQuery",
     website: "http://www.jquery.com",
@@ -13,7 +36,6 @@ EveryJS.libraries = [
     tags: ['dom'],
     size: 31
   },
-
   {
     name: "Ender",
     website: "http://ender.no.de/",
