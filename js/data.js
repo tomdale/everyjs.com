@@ -458,7 +458,7 @@ EveryJS_libraries = [
     ],
     dependencies: ["optionally depends on jQuery (to enable advanced DOM manipulation features)"],
     size: 24
-  }
+  },
   {
     name: "jsmake",
     website: "http://gimmi.github.com/jsmake/",
