@@ -6,7 +6,7 @@
 \____/ | .__/ |_|   \___/  \__,_| \__| \____/ \___/ |_|   \___|
        | |
        |_|
-
+test
 Your SproutCore project is almost ready! Here's how to get started:
 
 - Change lang="en" in the <html> tag if your page is not in English
