@@ -26,6 +26,19 @@ EveryJS_libraries = [
     tags: ["ui", "jQuery plugins", "widgets"],
     size: "295K, plus theme and additional assets. Can be customized on the download page."
   },
+
+{
+name: "Skeleton", 
+website: "http://getskeleton.com/",
+description: "Skeleton is a small collection of CSS & JS files that can help you rapidly develop sites that look beautiful at any size, be it a 17" laptop screen or an iPhone.", 
+useIf: [
+"You want a simple, lightweight framework for rapidly implementing responsive design web apps that work across devices"
+], 
+dependencies: ["jQuery (included in package)"],
+license: "MIT",
+tags: ["grid", "responsive design"],
+size: "~45kb containing all the CSS groundwork and JS goodies to get started on any web project"
+},
   
   {
     name: "OpenLayers",
