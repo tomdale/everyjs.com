@@ -471,6 +471,17 @@ size: "~45kb containing all the CSS groundwork and JS goodies to get started on 
     ],
     dependencies: ["optionally depends on jQuery (to enable advanced DOM manipulation features)"],
     size: 24
+  },
+  {
+    name: "jsmake",
+    website: "http://gimmi.github.com/jsmake/",
+    description: "JSMake is a simple Javascript build program with capabilities similar to make.", 
+    useIf: [
+      "You want to write your project build script using Javascript"
+    ],
+    dependencies: ["Rhino Javascript engine (included)"],
+    license: "APACHE",
+    tags: [ "make", "build", "tools", "rhino", "system", "development" ]
   }
 ];
 
