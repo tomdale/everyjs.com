@@ -30,7 +30,7 @@ EveryJS_libraries = [
 {
 name: "Skeleton", 
 website: "http://getskeleton.com/",
-description: "Skeleton is a small collection of CSS & JS files that can help you rapidly develop sites that look beautiful at any size, be it a 17" laptop screen or an iPhone.", 
+description: "Skeleton is a small collection of CSS & JS files that can help you rapidly develop sites that look beautiful at any size, be it a 17-inch laptop screen or an iPhone.", 
 useIf: [
 "You want a simple, lightweight framework for rapidly implementing responsive design web apps that work across devices"
 ], 
