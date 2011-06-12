@@ -482,6 +482,17 @@ size: "~45kb containing all the CSS groundwork and JS goodies to get started on 
     dependencies: ["Rhino Javascript engine (included)"],
     license: "APACHE",
     tags: [ "make", "build", "tools", "rhino", "system", "development" ]
+  },
+  {
+    name: "DOMBrew",
+    website: "https://github.com/glebm/DOMBrew",
+    description: "DOMBrew is a high performance DOM builder with clean carefully designed API",
+    useIf: [
+      "You use innerHTML."
+    ],
+    tags: [ "dom", "dom-builder" ],
+    license: "MIT",
+    size: 2.2
   }
 ];
 
