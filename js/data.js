@@ -458,7 +458,24 @@ EveryJS_libraries = [
     ],
     dependencies: ["optionally depends on jQuery (to enable advanced DOM manipulation features)"],
     size: 24
+  },
+
+  {
+	name: "wire.js",
+	website: "https://github.com/briancavalier/wire",
+	description: "A light, fast, flexible Javascript IOC container with Dependency Injection, component lifecycle management, AOP, and more.",
+	useIf: [
+		"You're building medium or large JS apps where architecture is key",
+		"You love building reusable components and want to connect them together in a declarative, non-invasive way",
+		"You want to take advantage of cool stuff like AOP to write less code",
+		"You hate writing the same glue and bootstrap code over and over"
+	],
+	tags: ["architecture", "ioc", "mvc", "amd", "aop"],
+	size: "6.4k standard config, and up (features added via plugins)",
+	dependencies: ["curl.js or RequireJS for AMD loading"],
+	license: "MIT"
   }
+
 ];
 
 if (window.EveryJS && window.EveryJS.loaded) { window.EveryJS.loaded(); }
