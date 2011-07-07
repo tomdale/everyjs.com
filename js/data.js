@@ -482,6 +482,17 @@ size: "~45kb containing all the CSS groundwork and JS goodies to get started on 
     dependencies: ["Rhino Javascript engine (included)"],
     license: "APACHE",
     tags: [ "make", "build", "tools", "rhino", "system", "development" ]
+  },
+  {
+    name: "fidel",
+    website: "http://jga.me/blog/2011/06/10/fidel",
+    description: "A simple controller class (inspired by spine and backbone)", 
+    useIf: [
+      "You are building widgets or single page apps"
+    ],
+    dependencies: ["ender, zepto or jquery"],
+    tags: [ "MVC", "controller", "ender"],
+    size: 2
   }
 ];
 
