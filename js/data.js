@@ -1,5 +1,19 @@
 EveryJS_libraries = [
   {
+    name: "genData",
+    website: "https://github.com/bemson/genData/",
+    description: "A normalization pattern to build, query, and manipulate everything.",
+    useIf: [
+      "You use loop-statements to parse and manipulate data.",
+      "You derive objects from other objects.",
+      "You work with nested sequences (json/xml) of structured or unstructured data."
+    ],
+    dependencies: null,
+    license: "MIT",
+    tags: ['data'],
+    size: 1
+  },
+  {
     name: "jQuery",
     website: "http://jquery.com/",
     description: "jQuery is a fast and concise JavaScript library that simplifies HTML document traversing, event handling, animating, and Ajax interactions for rapid web development.",
