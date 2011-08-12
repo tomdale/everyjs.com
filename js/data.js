@@ -100,6 +100,22 @@ size: "~45kb containing all the CSS groundwork and JS goodies to get started on 
   },
 
   {
+    name: "Batman.js",
+    website: "http://batmanjs.org/",
+    description: "Batman.js is a framework for building rich web applications with CoffeeScript or JavaScript. App code is concise and declarative, thanks to a powerful system of view bindings and observable properties. The API is designed with developer and designer happiness as its first priority.",
+    dependencies: ["jQuery (optional)"],
+    useIf: [
+      "You want to avoid bugs related to keeping the DOM in sync with your data model.",
+      "You want stateful MVC, like you'd find in Cocoa.",
+      "You want a well defined structure for your code with smart conventions",
+      "You don't want loading screens"
+    ],
+    tags: ['mvc'],
+    license: "MIT",
+    size: 28.7
+  },
+  
+  {
     name: "Dojo Toolkit",
     website: "http://dojotoolkit.org/",
     description: "Dojo Toolkit is an open source modular JavaScript toolkit designed to ease the rapid development of cross-platform, JavaScript/Ajax-based applications and web sites.",
