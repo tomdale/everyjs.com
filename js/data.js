@@ -1,5 +1,59 @@
 EveryJS_libraries = [
   {
+    name: "Cutter.js",
+    website: "https://github.com/tcorral/Cutter.js/",
+    description: "Cutter.js is a class to truncate HTML code to limit its length, by words number, without losing the markup.",
+    useIf: [
+      "You need to truncate a content in a DOM element by words without lost the original markup"
+    ],
+    dependencies: null,
+    license: "MIT",
+    tags: ['dom', 'html', 'truncate html'],
+    size: "1.5kb"
+  },
+  {
+    name: "IM.js",
+    website: "https://github.com/tcorral/IM.js/",
+    description: "Quick image comparison pixel by pixel.",
+    useIf: [
+      "You need to compare images, comparing them at pixel info",
+      "You need to compare urls screenshots allowing some tolerance to mark it as equal or different",
+      "You need to automatize testing for images"
+    ],
+    dependencies: null,
+    license: "MIT",
+    tags: ['image', 'image compare', 'compare'],
+    size: "1.11kb"
+  },
+  {
+    name: "Hermes.js",
+    website: "https://github.com/tcorral/Hermes.js/",
+    description: "Highly extensible message/error handler system.",
+    useIf: [
+      "You need to trace all the executions of methods of one object",
+      "You need to show/track messages/errors in different ways at the same time",
+      "You need an ErrorHandler of known errors and uncaught errors."
+    ],
+    dependencies: null,
+    license: "MIT",
+    tags: ['error handler'],
+    size: "3kb"
+  },
+  {
+    name: "Hydra",
+    website: "https://github.com/tcorral/Hydra.js/",
+    description: "Hydra.js is a module manager oriented system.",
+    useIf: [
+      "You need to create a scalable application",
+      "You need a modular application that allows you to extend them.",
+      "You need to write url threaded application or ajax threaded application."
+    ],
+    dependencies: null,
+    license: "MIT",
+    tags: ['architecture', 'promise', 'module', 'amd'],
+    size: "2kb"
+  },
+  {
     name: "genData",
     website: "https://github.com/bemson/genData/",
     description: "A normalization pattern to build, query, and manipulate everything.",
@@ -42,18 +96,18 @@ EveryJS_libraries = [
   },
 
 {
-name: "Skeleton", 
+name: "Skeleton",
 website: "http://getskeleton.com/",
-description: "Skeleton is a small collection of CSS & JS files that can help you rapidly develop sites that look beautiful at any size, be it a 17-inch laptop screen or an iPhone.", 
+description: "Skeleton is a small collection of CSS & JS files that can help you rapidly develop sites that look beautiful at any size, be it a 17-inch laptop screen or an iPhone.",
 useIf: [
 "You want a simple, lightweight framework for rapidly implementing responsive design web apps that work across devices"
-], 
+],
 dependencies: ["jQuery (included in package)"],
 license: "MIT",
 tags: ["grid", "responsive design"],
 size: "~45kb containing all the CSS groundwork and JS goodies to get started on any web project"
 },
-  
+
   {
     name: "OpenLayers",
     website: "http://www.openlayers.org/",
@@ -65,7 +119,7 @@ size: "~45kb containing all the CSS groundwork and JS goodies to get started on 
     tags: ["mapping"],
     size: "7,652K"
   },
-  
+
 
   {
     name: "Ender",
@@ -258,7 +312,7 @@ size: "~45kb containing all the CSS groundwork and JS goodies to get started on 
   {
     name: "qooxdoo",
     website: "http://qooxdoo.org/",
-    description: "qooxdoo is a universal JavaScript framework that enables you to create applications for a wide range of platforms. With its object-oriented programming model you build rich, interactive applications (RIAs), native-like apps for mobile devices, traditional web applications or even applications to run outside the browser.", 
+    description: "qooxdoo is a universal JavaScript framework that enables you to create applications for a wide range of platforms. With its object-oriented programming model you build rich, interactive applications (RIAs), native-like apps for mobile devices, traditional web applications or even applications to run outside the browser.",
     useIf: [
       "You need a UI kit for creating desktop-like interfaces.",
       "You need a UI kit for creating mobile interfaces."
@@ -294,7 +348,7 @@ size: "~45kb containing all the CSS groundwork and JS goodies to get started on 
   {
     name: "JavaScriptMVC",
     website: "http://javascriptmvc.com",
-    description: "JavaScriptMVC is an open-source framework containing the best ideas in jQuery development. It guides you to successfully completed projects by promoting best practices, maintainability, and convention over configuration..", 
+    description: "JavaScriptMVC is an open-source framework containing the best ideas in jQuery development. It guides you to successfully completed projects by promoting best practices, maintainability, and convention over configuration..",
     useIf: [
       "You want to build big applications on top of jQuery.",
       "You want great performance.",
@@ -308,7 +362,7 @@ size: "~45kb containing all the CSS groundwork and JS goodies to get started on 
     name: "scaleApp",
     website: "http://github.com/flosse/scaleApp",
     license: "MIT",
-    description: "scaleApp is a JavaScript framework for scalable One-Page-Applications.", 
+    description: "scaleApp is a JavaScript framework for scalable One-Page-Applications.",
     size: 105,
     dependencies: ["jQuery (included in package)"],
     tags: ['mvc', 'jQuery', 'dom']
@@ -318,7 +372,7 @@ size: "~45kb containing all the CSS groundwork and JS goodies to get started on 
     website: "http://benchmarkjs.com/",
     description: "A benchmarking library that works on nearly all JavaScript platforms, supports high-resolution timers, and returns statistically significant results.",
     size: 4.9
-  }, 
+  },
   {
     name: "Spine",
     website: "http://maccman.github.com/spine",
@@ -343,7 +397,7 @@ size: "~45kb containing all the CSS groundwork and JS goodies to get started on 
   {
     name: "LABjs",
     website: "http://labjs.com/",
-    description: "LABjs is a dynamic script loader intended to replace the use of the ugly, non-performant &lt;script&gt; tag with a flexible and performance-optimized alternative API.", 
+    description: "LABjs is a dynamic script loader intended to replace the use of the ugly, non-performant &lt;script&gt; tag with a flexible and performance-optimized alternative API.",
     useIf: [
       "You want to improve performance by loading scripts in parallel and without blocking other resources."
     ],
@@ -352,7 +406,7 @@ size: "~45kb containing all the CSS groundwork and JS goodies to get started on 
   {
     name: "KievII",
     website: "http://kievII.net/",
-    description: "Web audio application / DSP library, with HTML5 frontend.", 
+    description: "Web audio application / DSP library, with HTML5 frontend.",
     useIf: [
       "You want to build an audio Web application with an HTML5 GUI, automations and MozAudio / Web API support."
     ],
@@ -395,7 +449,7 @@ size: "~45kb containing all the CSS groundwork and JS goodies to get started on 
   {
     name: "History.js",
     website: "http://github.com/balupton/history.js",
-    description: "History.js solves cross compatibility problems with the HTML5 History API and provides a graceful fallback for HTML4 browsers. Essentially, it allows you to use the HTML5 History API gracefully and consistently in all browsers.", 
+    description: "History.js solves cross compatibility problems with the HTML5 History API and provides a graceful fallback for HTML4 browsers. Essentially, it allows you to use the HTML5 History API gracefully and consistently in all browsers.",
     useIf: [
       "You want be using the HTML5 History API, not spending your time trying to get it working in more than one browser"
     ],
@@ -420,7 +474,7 @@ size: "~45kb containing all the CSS groundwork and JS goodies to get started on 
   {
     name: "Ext Core",
     website: "http://www.sencha.com/products/extcore/",
-    description: "Ext Core is a cross-browser JavaScript library for building dynamic web pages. Ext Core provides basic cross-browser abstractions for DOM querying, element selection and more.", 
+    description: "Ext Core is a cross-browser JavaScript library for building dynamic web pages. Ext Core provides basic cross-browser abstractions for DOM querying, element selection and more.",
     useIf: [
       "You're looking for a high performance, lightweight, easy-to-use API"
     ],
@@ -463,7 +517,7 @@ size: "~45kb containing all the CSS groundwork and JS goodies to get started on 
   {
     name: "AmplifyJS",
     website: "http://amplifyjs.com/",
-    description: "Amplify is a set of components designed to solve common web application problems with a simplistic API. Amplify's goal is to simplify all forms of data handling by providing a unified API for various data sources. Amplify's store component handles persistent client-side storage, using standards like localStorage and sessionStorage, but falling back on non-standard implementations for older browsers. Amplify's request adds some additional features to jQuery's ajax method while abstracting away the underlying data source.", 
+    description: "Amplify is a set of components designed to solve common web application problems with a simplistic API. Amplify's goal is to simplify all forms of data handling by providing a unified API for various data sources. Amplify's store component handles persistent client-side storage, using standards like localStorage and sessionStorage, but falling back on non-standard implementations for older browsers. Amplify's request adds some additional features to jQuery's ajax method while abstracting away the underlying data source.",
     useIf: [
       "You need a publish/subscribe system with priority message support.",
       "You need a wrapper for various persistent client-side storage systems.",
@@ -478,7 +532,7 @@ size: "~45kb containing all the CSS groundwork and JS goodies to get started on 
   {
     name: "angular",
     website: "http://angularjs.org/",
-    description: "Is a framework for building interactive client-side web apps using declarative html templates, 2-way data-binding and dependency injection. If you care about testability of your code and efficiency of your app's DOM manipulation, you'll love angular.", 
+    description: "Is a framework for building interactive client-side web apps using declarative html templates, 2-way data-binding and dependency injection. If you care about testability of your code and efficiency of your app's DOM manipulation, you'll love angular.",
     useIf: [
       "You want to build rich apps much faster",
       "Are sick of boilerplate dom manipulation."
@@ -489,7 +543,7 @@ size: "~45kb containing all the CSS groundwork and JS goodies to get started on 
   {
     name: "jsmake",
     website: "http://gimmi.github.com/jsmake/",
-    description: "JSMake is a simple Javascript build program with capabilities similar to make.", 
+    description: "JSMake is a simple Javascript build program with capabilities similar to make.",
     useIf: [
       "You want to write your project build script using Javascript"
     ],
@@ -500,7 +554,7 @@ size: "~45kb containing all the CSS groundwork and JS goodies to get started on 
   {
     name: "fidel",
     website: "http://jga.me/blog/2011/06/10/fidel",
-    description: "A simple controller class (inspired by spine and backbone)", 
+    description: "A simple controller class (inspired by spine and backbone)",
     useIf: [
       "You are building widgets or single page apps"
     ],
