@@ -476,13 +476,17 @@ size: "~45kb containing all the CSS groundwork and JS goodies to get started on 
   },
 
   {
-    name: "angular",
+    name: "AngularJS",
     website: "http://angularjs.org/",
     description: "Is a framework for building interactive client-side web apps using declarative html templates, 2-way data-binding and dependency injection. If you care about testability of your code and efficiency of your app's DOM manipulation, you'll love angular.", 
     useIf: [
-      "You want to build rich apps much faster",
-      "Are sick of boilerplate dom manipulation."
+      "You want to build rich apps much faster.",
+      "You are sick of boilerplate dom manipulation.",
+      "You want to write clean and testable JavaScript code.",
+      "You want to be able to extend the template compiler to introduce app specific constructs.",
+      "You want to see what HTML would have been, had it been designed for web apps."
     ],
+    tags: ['mvc', 'dom'],
     dependencies: ["optionally depends on jQuery (to enable advanced DOM manipulation features)"],
     size: 24
   },
