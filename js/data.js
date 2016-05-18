@@ -309,9 +309,9 @@ size: "~45kb containing all the CSS groundwork and JS goodies to get started on 
     website: "http://github.com/flosse/scaleApp",
     license: "MIT",
     description: "scaleApp is a JavaScript framework for scalable One-Page-Applications.", 
-    size: 105,
-    dependencies: ["jQuery (included in package)"],
-    tags: ['mvc', 'jQuery', 'dom']
+    size: "5.8kb",
+    dependencies: null,
+    tags: ['ui', 'mvc', 'dom', 'coffeescript']
   },
   {
     name: "Benchmark.js",
